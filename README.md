@@ -5,15 +5,15 @@ This class allows to animate OpenGL drawing operations in SketchUp.
 You can see examples in [this video](https://vimeo.com/68927967).
 
 ## Usage
-
-* **_`AE::Animation.draw(view)`_**  
+ 
+* _**`AE::Animation.draw(view)`**_  
   Call this in the draw method of your SketchUp tool.
 
-* **_`AE::Animation.new(view, drawing_operations)`_**  
+* _**`AE::Animation.new(view, drawing_operations)`**_  
   with `view` as the current Sketchup::View of your tool
   and `drawing_operations` as an Array in which each drawing operation is represented as an array of the method's name (as Symbol) and its arguments
   
-* **_`<AE::Animation>.animate(properties)`_**  
+* _**`<AE::Animation>.animate(properties)`**_  
   with `properties` as a Hash containing
   `:duration` [Numeric]  
   `:repeat`   [Numeric] how often to repeat this animation within duration  
@@ -27,7 +27,7 @@ You can see examples in [this video](https://vimeo.com/68927967).
   `:scaling`        [Array] with arguments of SketchUp's `Geom::Transformation.scaling` method  
   `:rotation`       [Array] with arguments of SketchUp's `Geom::Transformation.rotation` method  
 
-* **_`<AE::Animation>.wait(duration)`_**  
+* _**`<AE::Animation>.wait(duration)`**_  
   with `duration` as a Number of how many seconds to wait.
   
 ## Example
